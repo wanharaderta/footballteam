@@ -16,6 +16,10 @@
 		83F913A62457E56D00699F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F913A42457E56D00699F9B /* LaunchScreen.storyboard */; };
 		83F913B12457E56D00699F9B /* footballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913B02457E56D00699F9B /* footballTests.swift */; };
 		83F913BC2457E56D00699F9B /* footballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913BB2457E56D00699F9B /* footballUITests.swift */; };
+		83F913CB2457E72D00699F9B /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913CA2457E72D00699F9B /* Club.swift */; };
+		83F913D524586E2000699F9B /* ClubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913D424586E2000699F9B /* ClubDetailView.swift */; };
+		83F913D82458912900699F9B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913D72458912900699F9B /* ProfileView.swift */; };
+		83F913DA2458953400699F9B /* HeaderProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F913D92458953400699F9B /* HeaderProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		83F913B72457E56D00699F9B /* footballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = footballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F913BB2457E56D00699F9B /* footballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footballUITests.swift; sourceTree = "<group>"; };
 		83F913BD2457E56D00699F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F913CA2457E72D00699F9B /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		83F913D424586E2000699F9B /* ClubDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailView.swift; sourceTree = "<group>"; };
+		83F913D72458912900699F9B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		83F913D92458953400699F9B /* HeaderProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 		83F9138A2457E56900699F9B = {
 			isa = PBXGroup;
 			children = (
+				83F913DB2458973C00699F9B /* View Models */,
+				83F913C92457E6D900699F9B /* Models */,
 				83F913952457E56900699F9B /* football */,
 				83F913AF2457E56D00699F9B /* footballTests */,
 				83F913BA2457E56D00699F9B /* footballUITests */,
@@ -109,6 +119,9 @@
 				83F913A72457E56D00699F9B /* Info.plist */,
 				83F9139A2457E56900699F9B /* football.xcdatamodeld */,
 				83F913A12457E56D00699F9B /* Preview Content */,
+				83F913D424586E2000699F9B /* ClubDetailView.swift */,
+				83F913D72458912900699F9B /* ProfileView.swift */,
+				83F913D92458953400699F9B /* HeaderProfileView.swift */,
 			);
 			path = football;
 			sourceTree = "<group>";
@@ -137,6 +150,21 @@
 				83F913BD2457E56D00699F9B /* Info.plist */,
 			);
 			path = footballUITests;
+			sourceTree = "<group>";
+		};
+		83F913C92457E6D900699F9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83F913CA2457E72D00699F9B /* Club.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83F913DB2458973C00699F9B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F913972457E56900699F9B /* AppDelegate.swift in Sources */,
+				83F913D524586E2000699F9B /* ClubDetailView.swift in Sources */,
 				83F9139C2457E56900699F9B /* football.xcdatamodeld in Sources */,
 				83F9139E2457E56900699F9B /* ContentView.swift in Sources */,
+				83F913CB2457E72D00699F9B /* Club.swift in Sources */,
+				83F913D82458912900699F9B /* ProfileView.swift in Sources */,
 				83F913992457E56900699F9B /* SceneDelegate.swift in Sources */,
+				83F913DA2458953400699F9B /* HeaderProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
