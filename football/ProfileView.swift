@@ -11,36 +11,26 @@ import SwiftUI
 struct ProfileView: View {
     
     var body: some View {
-        //        NavigationView {
-        //            VStack {
-        //                HeaderProfileView()
-        //                    .edgesIgnoringSafeArea(.top)
-        //                    .frame(height: 150)
-        //                    .foregroundColor(Color.red)
-        //                ProfileImage()
-        //                    .offset(y: -120)
-        //                    .padding(.bottom, -130)
-        //
-        //                VStack {
-        //                    Text("Wanhar")
-        //                    Text("Wanhardaengmaro@gmail.com")
-        //                }.padding()
-        //            }
-        //            .navigationBarTitle("Profile")
-        //            .padding()
-        //        }
-        VStack {
-            HeaderProfileView()
-                .edgesIgnoringSafeArea(.top)
-                .frame(height: 350)
-            ProfileImage()
-                .offset(y: -120)
-                .padding(.bottom, -130)
-            
+        NavigationView {
             VStack {
-                Text("Wanhar")
-                Text("Wanhardaengmaro@gmail.com")
-            }.padding()
+                HeaderProfileView()
+                    .edgesIgnoringSafeArea(.top)
+                    .frame(height: 350)
+                ProfileImage()
+                    .offset(y: -150)
+                    .padding(.bottom, -10)
+                
+                VStack {
+                    Text("Wanhar")
+                        .bold()
+                        .font(.title)
+                    Text("Wanhardaengmaro@gmail.com")
+                        .bold()
+                        .font(.subheadline)
+                }.padding()
+            }
+            .navigationBarTitle("Profile")
+            .padding()
         }
     }
 }

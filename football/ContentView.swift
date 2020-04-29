@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var profile = false
     let clubs = Club.all()
     
     var body: some View {
@@ -25,12 +26,13 @@ struct ContentView: View {
             .navigationBarTitle("Football Team")
             .navigationBarItems(trailing:
                 Button(action: {
-                
+                    self.profile.toggle()
                 }) {
                     Image(systemName: "person.crop.circle").imageScale(.large)
                 }
             )
-            
+        }.sheet(isPresented: $profile){
+            ProfileView()
         }
     }
 }

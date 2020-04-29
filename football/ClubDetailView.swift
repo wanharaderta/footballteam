@@ -15,10 +15,17 @@ struct ClubDetailView: View {
     var body: some View {
         VStack {
             Image(club.imageURL)
-            .resizable()
+                .resizable()
+                .frame(width: 150, height: 150, alignment: .topTrailing)
+                .padding()
             
             Text(club.name)
+            .bold()
+                .font(.headline)
+                .padding()
             Text(club.desc)
+                .padding()
+                .font(.subheadline)
         }
     }
 }
