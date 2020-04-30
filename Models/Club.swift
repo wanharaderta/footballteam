@@ -1,8 +1,8 @@
 //
-//  club.swift
-//  football
+//  Club.swift
+//  Football
 //
-//  Created by Wanhar on 28/04/20.
+//  Created by Wanhar on 30/04/20.
 //  Copyright © 2020 Wanhar. All rights reserved.
 //
 
@@ -32,5 +32,4 @@ extension Club {
         ]
     }
 }
-
 

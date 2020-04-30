@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:football.xcodeproj">
+      location = "self:/Users/wanhar/Documents/learning_ios/football/Football.xcodeproj">
    </FileRef>
 </Workspace>
